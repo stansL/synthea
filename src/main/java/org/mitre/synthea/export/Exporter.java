@@ -461,6 +461,7 @@ public class Exporter {
       try {
         BB2RIFExporter exporter = BB2RIFExporter.getInstance();
         exporter.exportNPIs();
+        exporter.exportManifest();
       } catch (IOException e) {
         e.printStackTrace();
       }
