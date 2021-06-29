@@ -230,4 +230,9 @@ public class ProviderTest {
            }
          });
   }
+  
+  @Test
+  public void testNPICreation() {
+    Assert.assertEquals("1234567893", Provider.toNPI(123_456_789L));
+  }
 }
